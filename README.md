@@ -12,3 +12,9 @@ Activate virtual Environment:
 ```sh
 .\venv\Scripts\activate
 ```
+
+Deactivate virtual Environment:
+
+```sh
+deactivate
+```
