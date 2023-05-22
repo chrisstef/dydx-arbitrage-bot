@@ -2,12 +2,13 @@
 
 ## Useful commands
 
+Create virtual Environment named `venv`:
 ```sh
-# Create virtual Environment named venv
-- python -m venv venv
+python -m venv venv
 ```
 
+Activate virtual Environment:
+
 ```sh
-# Activate the above virtual Environment
-- .\venv\Scripts\activate
+.\venv\Scripts\activate
 ```
