@@ -22,7 +22,7 @@ WINDOW = 21
 # ThresholdS - Opening
 MAX_HALF_LIFE = 24
 ZSCORE_THRESH = 1.5
-USD_PER_TRADE = 50
+USD_PER_TRADE = 100
 USD_MIN_COLLATERAL = 1880
 
 # Thresholds - Closing
