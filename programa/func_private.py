@@ -4,6 +4,10 @@ import time
 
 from pprint import pprint
 
+# Check order status
+def check_order_status(client, order_id):
+  order = client.private.get_order_by_id(order_id)
+  return order.data["order"]["status"]
 
 # Get existing open positions
 def is_open_positions(client, market):
