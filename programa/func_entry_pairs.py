@@ -26,12 +26,15 @@ def open_positions(client):
   markets = client.public.get_markets().data
 
   # Initialize container for BotAgent results
+  bot_agents = []
+  
   # Opening JSON file
   try:
     open_positions_file = open("bot_agents.json")
     open_positions_dict = json.load(open_positions_file)
     for p in open_positions_dict:
-      bot_agents.append(p)    
+      bot_agents.append(p)
+      
   except:
     bot_agents = []
 
