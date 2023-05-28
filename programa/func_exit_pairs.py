@@ -196,6 +196,6 @@ def manage_trade_exits(client):
             save_output.append(position)
 
     # Save remaining items
-    print(f"{len(save_output)} Items remaining. Saving file...")
+    print(f"{len(save_output)} position(s) remaining. Saving file...")
     with open("bot_agents.json", "w") as f:
         json.dump(save_output, f)

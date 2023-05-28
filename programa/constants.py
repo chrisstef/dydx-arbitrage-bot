@@ -5,7 +5,7 @@ from decouple import config
 MODE = "DEVELOPMENT"
 
 # Close all open positions and orders
-ABORT_ALL_POSITIONS = True
+ABORT_ALL_POSITIONS = False
 
 # Find Cointegrated Pairs
 FIND_COINTEGRATED = True
@@ -22,7 +22,7 @@ RESOLUTION = "1HOUR"
 # Stats Window
 WINDOW = 21
 
-# ThresholdS - Opening
+# Thresholds - Opening
 MAX_HALF_LIFE = 24
 ZSCORE_THRESH = 1.5
 USD_PER_TRADE = 100
@@ -32,7 +32,7 @@ USD_MIN_COLLATERAL = 1880
 CLOSE_AT_ZSCORE_CROSS = True
 
 # Ethereum Address
-ETHEREUM_ADDRESS = ""
+ETHEREUM_ADDRESS = "0x74cA136E2a562f4bCd44B5C561d54B621133C200"
 
 # KEYS - Development
 # Must be on Testnet on DYDX
