@@ -13,8 +13,18 @@ Activate virtual Environment:
 .\venv\Scripts\activate
 ```
 
-Deactivate virtual Environment:
+To deactivate virtual Environment:
 
 ```sh
 deactivate
+```
+
+Run bot:
+
+```sh
+cd programa 
+```
+
+```sh
+python main.py 
 ```
