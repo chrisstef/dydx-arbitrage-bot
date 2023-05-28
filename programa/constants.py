@@ -8,7 +8,7 @@ MODE = "DEVELOPMENT"
 ABORT_ALL_POSITIONS = True
 
 # Find Cointegrated Pairs
-FIND_COINTEGRATED = False
+FIND_COINTEGRATED = True
 
 # Manage Exits
 MANAGE_EXITS = True
@@ -32,7 +32,7 @@ USD_MIN_COLLATERAL = 1880
 CLOSE_AT_ZSCORE_CROSS = True
 
 # Ethereum Address
-ETHEREUM_ADDRESS = "0x74cA136E2a562f4bCd44B5C561d54B621133C200"
+ETHEREUM_ADDRESS = ""
 
 # KEYS - Development
 # Must be on Testnet on DYDX
