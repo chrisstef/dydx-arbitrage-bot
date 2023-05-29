@@ -17,7 +17,7 @@ MANAGE_EXITS = True
 PLACE_TRADES = True
 
 # Resolution
-RESOLUTION = "5MINS"
+RESOLUTION = "1HOUR"
 
 # Stats Window
 WINDOW = 21
@@ -31,8 +31,11 @@ USD_MIN_COLLATERAL = 1880
 # Thresholds - Closing
 CLOSE_AT_ZSCORE_CROSS = True
 
+# Thresholds - Closing
+CLOSE_AT_ZSCORE_CROSS = True
+
 # Ethereum Address
-ETHEREUM_ADDRESS = ""
+ETHEREUM_ADDRESS = "0x74cA136E2a562f4bCd44B5C561d54B621133C200"
 
 # KEYS - Development
 # Must be on Testnet on DYDX
