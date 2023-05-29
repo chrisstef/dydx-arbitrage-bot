@@ -5,7 +5,7 @@ from decouple import config
 MODE = "DEVELOPMENT"
 
 # Close all open positions and orders
-ABORT_ALL_POSITIONS = False
+ABORT_ALL_POSITIONS = True
 
 # Find Cointegrated Pairs
 FIND_COINTEGRATED = True
@@ -17,7 +17,7 @@ MANAGE_EXITS = True
 PLACE_TRADES = True
 
 # Resolution
-RESOLUTION = "1HOUR"
+RESOLUTION = "5MINS"
 
 # Stats Window
 WINDOW = 21
