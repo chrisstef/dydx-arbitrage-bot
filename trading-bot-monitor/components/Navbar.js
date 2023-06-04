@@ -82,6 +82,9 @@ export default function Navbar() {
                                         <Link href="/settings">Account Settings</Link>
                                     </MenuItem>
                                     <MenuItem>
+                                        <Link href="/subscription">Subscription</Link>
+                                    </MenuItem>
+                                    <MenuItem>
                                         <Link href="/logout">Logout</Link>
                                     </MenuItem>
                                 </MenuList>
