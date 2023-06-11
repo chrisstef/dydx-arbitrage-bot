@@ -3,10 +3,7 @@ from func_utils import format_number
 import time
 import json
 
-# Check order status
-def check_order_status(client, order_id):
-  order = client.private.get_order_by_id(order_id)
-  return order.data["order"]["status"]
+from pprint import pprint
 
 # Get existing open positions
 def is_open_positions(client, market):
@@ -30,6 +27,12 @@ def is_open_positions(client, market):
 # Check order status
 def check_order_status(client, order_id):
   order = client.private.get_order_by_id(order_id)
+  return order.data["order"]["status"]
+
+
+# Check order status
+def check_order_status(client, order_id):
+  order = client.private.get_order_by_id(order_id)
   if order.data:
     if "order" in order.data.keys():
       return order.data["order"]["status"]
@@ -38,11 +41,11 @@ def check_order_status(client, order_id):
 
 # Place market order
 def place_market_order(client, market, side, size, price, reduce_only):
- 
+     
     # Get position ID
     account_response = client.private.get_account()
     position_id = account_response.data["account"]["positionId"]
-    print(f"position_id obtained: {position_id}")
+    #print(f"place_market_order: position_id obtained: {position_id}")
  
     # Get server time and calculate time difference with local time
     server_time = client.public.get_time()
@@ -53,6 +56,7 @@ def place_market_order(client, market, side, size, price, reduce_only):
     # Calculate adjusted expiration time
     adjusted_local_time = datetime.now() - time_difference
     expiration = adjusted_local_time + timedelta(seconds=70)
+    #print(f"place_market_order: expiration calculated: {expiration}")
  
     try:
         # Place order
@@ -70,14 +74,13 @@ def place_market_order(client, market, side, size, price, reduce_only):
             reduce_only=reduce_only
         )
     except Exception as e:
-        print(f"Error in place_market_order creating order: {e}")
+        print(f"Error in place_market_order. creating order: {e}")
         raise e
  
-    print("place_market_order: succesfully placed order.")
+    print("Succesfully placed order.")
  
     # Return result
     return placed_order.data
-
 
 # Abort all open positions
 def abort_all_positions(client):
