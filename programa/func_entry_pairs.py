@@ -7,8 +7,6 @@ from func_bot_agent import BotAgent
 import pandas as pd
 import json
 
-from pprint import pprint
-
 
 # Open positions
 def open_positions(client):
