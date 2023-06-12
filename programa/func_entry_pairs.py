@@ -81,9 +81,17 @@ def open_positions(client):
           accept_quote_price = format_number(accept_quote_price, quote_tick_size)
           accept_failsafe_base_price = format_number(failsafe_base_price, base_tick_size)
 
-          # Get size
-          base_quantity = 1 / base_price * USD_PER_TRADE
-          quote_quantity = 1 / quote_price * USD_PER_TRADE
+           # Get size
+          if base_price < 0.1:
+            base_quantity = round((1 / base_price * USD_PER_TRADE) / 10) * 10
+          else:
+            base_quantity = 1 / base_price * USD_PER_TRADE
+            
+          if quote_price < 0.1:
+            quote_quantity = round((1 / quote_price * USD_PER_TRADE) / 10) * 10
+          else:
+            quote_quantity = 1 / quote_price * USD_PER_TRADE
+            
           base_step_size = markets["markets"][base_market]["stepSize"]
           quote_step_size = markets["markets"][quote_market]["stepSize"]
 

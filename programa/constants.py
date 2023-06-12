@@ -11,13 +11,13 @@ ABORT_ALL_POSITIONS = False
 FIND_COINTEGRATED = True
 
 # Manage Exits
-MANAGE_EXITS = False
+MANAGE_EXITS = True
 
 # Place Trades
-PLACE_TRADES = False
+PLACE_TRADES = True
 
 # Resolution
-RESOLUTION = "5MINS"
+RESOLUTION = "1HOUR"
 
 # Stats Window
 WINDOW = 21
