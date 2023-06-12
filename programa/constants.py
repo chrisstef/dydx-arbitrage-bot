@@ -17,7 +17,7 @@ MANAGE_EXITS = True
 PLACE_TRADES = True
 
 # Resolution
-RESOLUTION = "1HOUR"
+RESOLUTION = "5MINS"
 
 # Stats Window
 WINDOW = 21
