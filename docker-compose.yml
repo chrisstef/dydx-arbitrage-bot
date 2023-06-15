@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dydx-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./programa:/app/programa
+      - ./.env:/app/.env
+    environment:
+      - MODE=DEVELOPMENT
