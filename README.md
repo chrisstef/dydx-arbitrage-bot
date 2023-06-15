@@ -28,13 +28,3 @@ cd programa
 ```sh
 python main.py 
 ```
-
-Frontend:
-
-```sh
-cd frontend
-```
-
-```sh
-yarn dev
-```
