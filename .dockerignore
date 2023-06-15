@@ -1,0 +1,12 @@
+# Ignore common development files and folders
+.git
+.venv
+__pycache__
+*.pyc
+
+# Ignore editor and IDE-specific files
+.vscode
+.idea
+
+# Ignore project-specific files and folders
+output.txt
