@@ -14,8 +14,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY programa/ ./programa/
 COPY .env .
 
-# Set environment variables
-ENV MODE="DEVELOPMENT"
-
 # Define the command to run your bot
-CMD python ./programa/main.py
+CMD ["python", "-u", "./programa/main.py"]
